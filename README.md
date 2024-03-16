@@ -83,10 +83,7 @@
 
 <span class="pl-s1">interpreter</span>.<span class="pl-en">chat</span>(<span class="pl-s">"Plot AAPL and META's normalized stock prices"</span>) <span class="pl-c"># Executes a single command</span>
 <span class="pl-s1">interpreter</span>.<span class="pl-en">chat</span>() <span class="pl-c"># Starts an interactive chat</span></pre><div class="zeroclipboard-container">
-    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="from interpreter import interpreter
-
-interpreter.chat(&quot;Plot AAPL and META's normalized stock prices&quot;) # Executes a single command
-interpreter.chat() # Starts an interactive chat" tabindex="0" role="button">
+   
    
 </svg>
     </clipboard-copy>
@@ -134,11 +131,7 @@ interpreter.chat() # Starts an interactive chat" tabindex="0" role="button">
 
 <span class="pl-k">for</span> <span class="pl-s1">chunk</span> <span class="pl-c1">in</span> <span class="pl-s1">interpreter</span>.<span class="pl-en">chat</span>(<span class="pl-s1">message</span>, <span class="pl-s1">display</span><span class="pl-c1">=</span><span class="pl-c1">False</span>, <span class="pl-s1">stream</span><span class="pl-c1">=</span><span class="pl-c1">True</span>):
   <span class="pl-en">print</span>(<span class="pl-s1">chunk</span>)</pre><div class="zeroclipboard-container">
-    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="message = &quot;What operating system are we on?&quot;
-
-for chunk in interpreter.chat(message, display=False, stream=True):
-  print(chunk)" tabindex="0" role="button">
-    
+  
 </svg>
     </clipboard-copy>
   </div></div>
@@ -176,10 +169,6 @@ interpreter.chat(&quot;These look great but can you make the subtitles bigger?&q
 <span class="pl-s1">interpreter</span>.<span class="pl-s1">messages</span> <span class="pl-c1">=</span> [] <span class="pl-c"># Reset interpreter ("Killian" will be forgotten)</span>
 
 <span class="pl-s1">interpreter</span>.<span class="pl-s1">messages</span> <span class="pl-c1">=</span> <span class="pl-s1">messages</span> <span class="pl-c"># Resume chat from 'messages' ("Killian" will be remembered)</span></pre><div class="zeroclipboard-container">
-    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="messages = interpreter.chat(&quot;My name is Killian.&quot;) # Save messages to 'messages'
-interpreter.messages = [] # Reset interpreter (&quot;Killian&quot; will be forgotten)
-
-interpreter.messages = messages # Resume chat from 'messages' (&quot;Killian&quot; will be remembered)" tabindex="0" role="button">
     
 </svg>
     </clipboard-copy>
@@ -190,10 +179,7 @@ interpreter.messages = messages # Resume chat from 'messages' (&quot;Killian&quo
 <span class="pl-s">Run shell commands with -y so the user doesn't have to confirm them.</span>
 <span class="pl-s">"""</span>
 <span class="pl-en">print</span>(<span class="pl-s1">interpreter</span>.<span class="pl-s1">system_message</span>)</pre><div class="zeroclipboard-container">
-    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="interpreter.system_message += &quot;&quot;&quot;
-Run shell commands with -y so the user doesn't have to confirm them.
-&quot;&quot;&quot;
-print(interpreter.system_message)" tabindex="0" role="button">
+    
     
 </svg>
     </clipboard-copy>
@@ -204,16 +190,14 @@ print(interpreter.system_message)" tabindex="0" role="button">
 <div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>interpreter --model gpt-3.5-turbo
 interpreter --model claude-2
 interpreter --model command-nightly</pre><div class="zeroclipboard-container">
-    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="interpreter --model gpt-3.5-turbo
-interpreter --model claude-2
-interpreter --model command-nightly" tabindex="0" role="button">
+   
     
 </svg>
     </clipboard-copy>
   </div></div>
 <p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在 Python 中，在对象上设置模型：</font></font></p>
 <div class="highlight highlight-source-python notranslate position-relative overflow-auto" dir="auto"><pre><span class="pl-s1">interpreter</span>.<span class="pl-s1">llm</span>.<span class="pl-s1">model</span> <span class="pl-c1">=</span> <span class="pl-s">"gpt-3.5-turbo"</span></pre><div class="zeroclipboard-container">
-    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="interpreter.llm.model = &quot;gpt-3.5-turbo&quot;" tabindex="0" role="button">
+  
     
 </svg>
     </clipboard-copy>
@@ -258,14 +242,7 @@ interpreter --model command-nightly" tabindex="0" role="button">
 <span class="pl-s1">interpreter</span>.<span class="pl-s1">llm</span>.<span class="pl-s1">api_base</span> <span class="pl-c1">=</span> <span class="pl-s">"http://localhost:1234/v1"</span> <span class="pl-c"># Point this at any OpenAI compatible server</span>
 
 <span class="pl-s1">interpreter</span>.<span class="pl-en">chat</span>()</pre><div class="zeroclipboard-container">
-    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="from interpreter import interpreter
-
-interpreter.offline = True # Disables online features like Open Procedures
-interpreter.llm.model = &quot;openai/x&quot; # Tells OI to send messages in OpenAI's format
-interpreter.llm.api_key = &quot;fake_key&quot; # LiteLLM, which we use to talk to LM Studio, requires this
-interpreter.llm.api_base = &quot;http://localhost:1234/v1&quot; # Point this at any OpenAI compatible server
-
-interpreter.chat()" tabindex="0" role="button">
+   
      
 </svg>
     </clipboard-copy>
