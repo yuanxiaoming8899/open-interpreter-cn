@@ -314,19 +314,7 @@ interpreter --model command-nightly</pre><div class="zeroclipboard-container">
 <span class="pl-en">@<span class="pl-s1">app</span>.<span class="pl-en">get</span>(<span class="pl-s">"/history"</span>)</span>
 <span class="pl-k">def</span> <span class="pl-en">history_endpoint</span>():
     <span class="pl-k">return</span> <span class="pl-s1">interpreter</span>.<span class="pl-s1">messages</span></pre><div class="zeroclipboard-container">
-    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="# server.py
-
-from fastapi import FastAPI
-from fastapi.responses import StreamingResponse
-from interpreter import interpreter
-
-app = FastAPI()
-
-@app.get(&quot;/chat&quot;)
-def chat_endpoint(message: str):
-    def event_stream():
-        for result in interpreter.chat(message, stream=True):
-            yield f&quot;data: {result}\n\n&quot;
+   
 
     return StreamingResponse(event_stream(), media_type=&quot;text/event-stream&quot;)
 
